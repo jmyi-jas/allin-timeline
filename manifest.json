@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "XHS AIlin 时间轴Air.ver",
+  "version": "1.4.0",
+  "description": "小红书内部AI平台对话时间轴 简约版本",
+  "icons": {
+    "16":  "logo.png",
+    "48":  "logo.png",
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ai.devops.xiaohongshu.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
