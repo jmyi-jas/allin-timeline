@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "XHS AI 时间轴导航",
+  "version": "1.5.0",
+  "description": "小红书内部AI平台对话时间轴",
+  "icons": {
+    "16":  "favicon-16x16.png",
+    "48":  "favicon-32x32.png",
+    "128": "android-chrome-192x192.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ai.devops.xiaohongshu.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
